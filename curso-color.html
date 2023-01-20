@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <link rel="stylesheet" type="text/css" href="css/cursor-color.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+</head>
+
+<body>
+    <h1>CURSOR:</h1>
+    <p>Tipo de cursos disponible ( auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | text | wait | help | progress ) ) | inherit</p>
+    <p>Ej:<br>  cursor: pointer;(sobre contenedor)<br> cursor: progress;(click dentro del contenedor)</p>
+    
+    <div class="contenedor">
+        <div class="hijo">
+            div
+        </div>
+    </div>
+    <h1>COLORES</h1>
+    <a href="https://www.mclibre.org/consultar/htmlcss/css/css-color.html#svg" target="_blank" rel="noopener noreferrer">Lista de colores</a>
+    <br>
+    <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank" rel="noopener noreferrer">colors-picker-code</a>
+    <p>Hexadecimal (Solo recibe TRES:#fff o SEIS:#ff0000 o SEIS:... u OCHO:...) :<br>#f00 = red <br>#fff = rgb(255,255,255) </p>
+    <div class="color-hexadecimal">
+        Hexadecimal
+    </div>
+    <p> RGB (Red,Green,Blue) :</p>
+    <div class="color-rgb">
+        RGB
+    </div>
+
+    <p> RGBA (Red,Green,Blue,Alpha)) : <br>Alpha: parametro de opacidad. </p>
+    <div class="color-rgba">
+        RGBA
+    </div>
+
+    <img src="img/colores-hexadecimal.png" alt="colores-hexadecimal"width="80%">
+    <h1>LO QUE SE VERA:</h1>
+    <ol start="1">
+        <li>OUTLINE</li>
+        <li>POSITION:
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </li>
+        <li>Z-INDEX
+            <ul>
+                <li>Solo el elementos posicionados conflictos de hijos y padres</li>
+            </ul>
+        </li>
+        <li>DISPLAY:
+            <ul>
+                <li style="color:red ;">Block</li>
+                <li style="color:red ;">Inline</li>
+                <li style="color:red ;">Inline-Block</li>
+                <li>Table</li>
+                <li>Inline-Table</li>
+                <li>List-Item</li>
+                <li>Table-Cell</li>
+                <li>Table-Row</li>
+                <li>Table-Column</li>
+                <li>Grid</li>
+            </ul>
+        </li>
+        <del style="color:red ;">
+            <li>OVERFLOW: (X,Y) AUTO, HIDDEN, SCROLL</li>
+            <li >FLOAT: (Left, Right, None, Inherit)</li>
+            <li>PSEUDO-ELEMENTOS:
+                <ul>
+                    <li>::First-line    | BLOCK (inline-block)</li>
+                    <li>::First-letter  | BLOCK (inline-block)</li>
+                    <li>::placeholder</li>
+                    <li>::selection</li>
+                    <li>::after         | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                    <li>::before        | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                </ul>
+            </li>
+            <li>PSEUDO-CLASES:
+                <ul>
+                    <li>:hover</li>
+                    <li>:link</li>
+                    <li>:visited</li>
+                    <li>:actived</li>
+                    <li>:focus</li>
+                    <li>:lang</li>
+                </ul>
+            </li>
+            <li>OBJECT-FIT: Fil
+                <ul>
+                    <li>Contain</li>
+                    <li>Cover</li>
+                    <li>None</li>
+                    <li>Scale-Down</li>
+                </ul>
+            </li>
+            <li>OBJECT-POSITION:
+                <ul>
+                    <li>Left</li>
+                    <li>Right</li>
+                    <li>Top</li>
+                    <li>Button</li>
+                    <li>PX</li>
+                    <li>EM</li>
+                    <li>%</li>
+                    <li>ETC</li>
+                </ul>
+            </li>
+        
+            <li>CURSOR:
+                <ul>
+                    <li><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor" target="_blank" rel="noopener noreferrer">https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor</a></li>
+                </ul>
+            </li>
+            <li>COLORES: Color Name
+                <ul>
+                    <li>Hexadecimal</li>
+                    <li>RGB</li>
+                    <li>RGBA</li>
+                    <li>HSL</li>
+                    <li>HSLA</li>
+                </ul>
+            </li>
+        </del>
+            <li>RESPONSIVE DESING - MOBILE FIRST</li>
+            <li>FLEXBOX:
+                <ul>
+                    <li>Contenedor y Contenido</li>
+                    <li>Flex Container - Flex Item</li>
+                    <li>Main Axis (Main-Start - Main-End)</li>
+                    <li>Cross Axis (Cross-Start - Cross-End)</li>
+                    <li>Propiedades:
+                        <ul>
+                            <li>Flex-Direction</li>
+                            <li>Flex-Wrap: No-wrap - Wrap -Wrap-reverse;</li>
+                            <li>Flex-Flow: flex-direction flex-wrap;</li>
+                            <li>Justify-Content: center, space-arround, space-between, space-evely (main axis)</li>
+                            <li>Aling-items: flex-start, center, flex-end, stretch, baseline (cross axis)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Propiedades de los Items:
+                <ul>
+                    <li>Aling-Self (Cross Axis)</li>
+                </ul>
+            </li>
+            <li>Funcionamiento de Margin:
+                Margin-(direction): auto -> margin = contenedor - tamaño de la caia en eje en el que corre (direction)
+            </li>
+        
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+* {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/*  */
+/* POSITION FIXED
+*/
+/* body {
+    padding-top: 100px;
+}
+.caja-fixed {
+    background: red;
+    position: fixed;
+    margin: -100px;
+} */
+
+/* POSITION STICKY*/
+
+.caja-fixed {
+    background: blue;
+    position: sticky;
+    opacity: 0.5;
+    top: 0;
+}

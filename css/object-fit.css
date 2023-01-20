@@ -1,0 +1,136 @@
+* {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/* object-fit: contain; */
+
+h1{
+    font-weight: 700;
+    text-align: center;
+}
+.imagen-contain {
+    margin: 15px;
+    width: 200px;
+    height: 250px;
+    /* display: flex; */
+}
+.imagen-contain img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #000;
+    background: chartreuse;
+    object-fit: contain;
+}
+
+/* object-fit: cover; */
+
+.imagen-cover {
+    margin: 15px;
+    width: 400px;
+    height: 300px;
+    /* display: flex; */
+}
+.imagen-cover img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #000;
+    background: chartreuse;
+    object-fit: cover;
+}
+
+/* object-fit: none; */
+
+.imagen-none {
+    margin: 15px;
+    width: 400px;
+    height: 300px;
+    /* display: flex; */
+}
+.imagen-none img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #000;
+    background: chartreuse;
+    object-fit: none;
+}
+
+/* object-fit: scale-down; */
+
+.imagen-scale-down {
+    margin: 15px;
+    width: 400px;
+    height: 300px;
+    /* display: flex; */
+}
+.imagen-scale-down img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #000;
+    background: chartreuse;
+    object-fit:  scale-down;
+}
+
+/* OBJECT-POSITION
+/* left, right, bottom, top, -4em,  */
+
+.imagen-position{
+    margin: 15px;
+    width:140px;
+    height: 200px;
+    background: greenyellow;
+}
+.imagen-position .izquierda {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: left;
+}
+.imagen-position .derecha {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: right;
+}
+.imagen-position-baja{
+    margin: 15px;
+    width: 180px;
+    height: 140px;
+    background: greenyellow;
+}
+.imagen-position-baja .abajo {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.imagen-position-baja .arriba {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: top;
+}
+/*  */
+
+/* OBJECT-FIT PARA MULTIPLES IMAGEN (Avence completo mas adelante) */
+.imagen-multi {
+    display: flex;
+    height: 150px;
+    flex-wrap: wrap;
+}
+.imagen-multi div {
+    flex: 1;
+    display: flex;
+    margin: 4px;
+    border: 2px solid chartreuse;
+    min-width: 120px;
+}
+.imagen-multi img {
+    object-fit: cover;
+    width: 100%;
+}

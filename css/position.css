@@ -1,0 +1,91 @@
+* {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/*  */
+/* POSITION RELATIVE
+   Relative: mantiene la pocision y permite el uso del top,bottom,left,right y z-index
+*/
+
+.contenedor {
+    width: 300px;
+    height: 300px;
+    background: blueviolet;
+    margin: 40px;
+    position: relative;
+    /* z-index: 100;no funciona */
+}
+.hijo {
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    /* z-index: 10;no funciona */
+    z-index: -1;/* SI funciona */
+
+}
+
+/*  */
+/* POSITION ABSOLUTE
+   Relative: mantiene la pocision y permite el uso del top,bottom,left,right y z-index
+*/
+
+
+div {
+
+    /* background: blueviolet; */
+    display: block;
+    position: absolute;/* elimina el espacio reservado y se ajusta al contenido*/
+}
+
+div div {
+    height: 75px;
+    width: 75px;
+    background: chartreuse;
+}
+.content {
+    /* position: static; */
+    position: relative;
+    border: 5px solid red;
+    margin: 50px auto;/* 50px arriba y abajo ; auto de los lados */
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.box1 {
+    /* background-color: orange; */
+    left: 0;
+   
+}
+.box2 {
+    right: 0;
+   
+}
+.box3 {
+    left: 0;
+    bottom: 0;
+}
+.box4 {
+    right: 0;
+    bottom: 0;
+}
+.box5 {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*  */
+/* POSITION FIXED
+*/
+.caja-fixed {
+    background: red;
+    position: fixed;
+    opacity: 0.2;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="css/propiedades-items.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+</head>
+
+<body>
+    <h1>PROPIEDADES DE LOS ITEMS:</h1>
+    <h2>ALIGN-SELF</h2>
+    <p>align-self: center; align-self: flex-start; align-self: flex-start; align-self: baseline;</p>
+    <h2>align-self: center;</h2>
+    <div class="flex-container-aling-self">
+        <div class="flex-item orange">box 1</div>
+        <div class="flex-item">box 2</div>
+        <div class="flex-item">box 3</div>
+        <div class="flex-item green aling-self">box 4</div>
+    </div>
+
+    <h2>MARGIN-(DIRECTION)</h2>
+    <p>margin-top: auto; margin-left: auto; margin-bottom: auto; margin-right: auto; margin: auto;</p>
+    <h2>margin: auto;</h2>
+
+    <div class="flex-container-margin-auto">
+        <div class="flex-item-margin-auto orange">box 1</div>
+    </div>
+
+    <h2>FLEX-GROW</h2>
+    <div class="flex-container-flex-row">
+        <div class="flex-item-flex-row orange">box 1</div>
+        <div class="flex-item-flex-row">box 2</div>
+        <div class="flex-item-flex-row green">box 3</div>
+    </div>
+
+
+    <h2>FLEX-SHRINK && FLEX-BASIS</h2>
+    <div class="flex-container-Flex-shrink-basis">
+        <div class="flex-item-shrink-basis orange-shrink-basis">box 1</div>
+        <div class="flex-item-shrink-basis">box 2</div>
+        <div class="flex-item-shrink-basis green-shrink-basis ">box 3</div>
+    </div>
+
+    <h2>ORDER</h2>
+    <div class="flex-container-order">
+        <div class="flex-item-order orange-order">box 1</div>
+        <div class="flex-item-order">box 2</div>
+        <div class="flex-item-order green-order">box 3</div>
+    </div>
+
+
+<h2>LO QUE SE VERA:</h2>
+<ol start="1">
+    <li>OUTLINE</li>
+    <li>POSITION:
+        <ul>
+            <li>Static</li>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </li>
+    <li>Z-INDEX
+        <ul>
+            <li>Solo el elementos posicionados conflictos de hijos y padres</li>
+        </ul>
+    </li>
+    <li>DISPLAY:
+        <ul>
+            <li style="color:red ;">Block</li>
+            <li style="color:red ;">Inline</li>
+            <li style="color:red ;">Inline-Block</li>
+            <li>Table</li>
+            <li>Inline-Table</li>
+            <li>List-Item</li>
+            <li>Table-Cell</li>
+            <li>Table-Row</li>
+            <li>Table-Column</li>
+            <li>Grid</li>
+        </ul>
+    </li>
+    <del style="color:red ;">
+        <li>OVERFLOW: (X,Y) AUTO, HIDDEN, SCROLL</li>
+        <li >FLOAT: (Left, Right, None, Inherit)</li>
+        <li>PSEUDO-ELEMENTOS:
+            <ul>
+                <li>::First-line    | BLOCK (inline-block)</li>
+                <li>::First-letter  | BLOCK (inline-block)</li>
+                <li>::placeholder</li>
+                <li>::selection</li>
+                <li>::after         | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                <li>::before        | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+            </ul>
+        </li>
+        <li>PSEUDO-CLASES:
+            <ul>
+                <li>:hover</li>
+                <li>:link</li>
+                <li>:visited</li>
+                <li>:actived</li>
+                <li>:focus</li>
+                <li>:lang</li>
+            </ul>
+        </li>
+        <li>OBJECT-FIT: Fil
+            <ul>
+                <li>Contain</li>
+                <li>Cover</li>
+                <li>None</li>
+                <li>Scale-Down</li>
+            </ul>
+        </li>
+        <li>OBJECT-POSITION:
+            <ul>
+                <li>Left</li>
+                <li>Right</li>
+                <li>Top</li>
+                <li>Button</li>
+                <li>PX</li>
+                <li>EM</li>
+                <li>%</li>
+                <li>ETC</li>
+            </ul>
+        </li>
+    
+        <li>CURSOR:
+            <ul>
+                <li><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor" target="_blank" rel="noopener noreferrer">https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor</a></li>
+            </ul>
+        </li>
+        <li>COLORES: Color Name
+            <ul>
+                <li>Hexadecimal</li>
+                <li>RGB</li>
+                <li>RGBA</li>
+                <li>HSL</li>
+                <li>HSLA</li>
+            </ul>
+        </li>
+  
+        <li>RESPONSIVE DESING - MOBILE FIRST</li>
+        <li>FLEXBOX:
+            <ul>
+                <li>Contenedor y Contenido</li>
+                <li>Flex Container - Flex Item</li>
+                <li>Main Axis (Main-Start - Main-End)</li>
+                <li>Cross Axis (Cross-Start - Cross-End)</li>
+                <li>Propiedades:
+                    <ul>
+                        <li>Flex-Direction</li>
+                        <li>Flex-Wrap: No-wrap - Wrap -Wrap-reverse;</li>
+                        <li>Flex-Flow: flex-direction flex-wrap;</li>
+                        <li>Justify-Content: center, space-arround, space-between, space-evely (main axis)</li>
+                        <li>Aling-items: flex-start, center, flex-end, stretch, baseline (cross axis)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>PROPIEDADES DE LOS ITEMS:
+            <ul>
+                <li>Aling-Self (Cross Axis)</li>
+                <li>Funcionamiento de Margin:
+                    Margin-(direction): auto -> margin = contenedor - tamaño de la caia en eje en el que corre (direction)
+                </li>
+                <li>Flex-grow: (Espacio asignado + sobrante / grows)(Main Axiz)</li>
+    
+                <li>Flex-shrink: Espacio que "cede" (Main Axis)</li>
+                <li>Flex-basis: Medicion antes de encogerse (En auto(defect value), agarra el width, y sí no tiene mas propiedad)(Main Axis)</li>
+                <li>Flex: flex-grow, flex-shrink, flex-basis(al menos el primer parametro obligatorio)</li>
+                <li>Order: Como el z index, pero en el eje en el que apunta el main axis</li>
+            </ul>
+        </li>
+    </del>
+    </ol>
+</body>
+
+</html>

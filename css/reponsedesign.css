@@ -1,0 +1,32 @@
+* {
+    font-weight: 100;
+    font-size: 18px;
+}
+h1 {
+    font-weight: 900;
+}
+
+/* CURSOR
+ cursor: row-resize; cursor: pointer; cursor: copy; cursor: progress;
+*/
+div {
+    width: 45%;
+    display: inline-block;
+    padding: 10px;
+    background: #ddd;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.caja2 {
+    background: #bbb;
+}
+/* Cuando la pantalla alcance resoluciones menores a 800px */
+@media only screen and (max-width: 800px){
+    div {
+        display: block;
+        width: 100%;
+    }
+}

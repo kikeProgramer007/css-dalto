@@ -1,0 +1,260 @@
+* {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+body {
+    background: radial-gradient(circle, #fff,#bbb);
+    padding: 10px;
+}
+h2 {
+    font-size: 18px;
+    color: #262928;
+    font-weight: 700;
+}
+span {
+    font-weight: 700;
+}
+/* GRID_ DINAMICO
+    grid-template-columns: repeat(3, min-content);
+    grid-template-columns: repeat(3, minmax(100px,300px));
+    grid-template-columns: repeat(3, minmax( min-content,300px));
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( 100px,1fr));
+    grid-template-rows: repeat(3,100px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 2px solid #000;
+    background-color: #333;
+    grid-auto-flow: dense;
+}
+
+
+.grid-item {
+    border: 1px solid #000;
+    background-color: #999;
+}
+
+
+/*=================================================================*/
+.grid-container-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 100px,1fr));
+    grid-template-rows: repeat(3,100px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 2px solid #000;
+    background-color: #333;
+    grid-auto-flow: dense;
+}
+
+/*=================================================================*/
+/* 
+    ALINEACION VERTICALMENTE
+    justify-items: stretch;         -->Alineacion por defecto
+    justify-items: center;          --> centar items
+    justify-items: start;           --> al inicio izq items
+    justify-items: flex-start;
+    ustify-items: flex-end;
+    ustify-items: end;
+
+    ALINEACION VERTICALMENTE
+    align-items: stretch;           -->Alineacion por defecto
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: start;
+    align-items: end;
+*/
+.grid-container-flex {
+    display: grid;
+    grid-template-columns: repeat(3, minmax( 120px, 1fr));
+    grid-template-rows: repeat(3,200px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 2px solid #000;
+    background-color: #333;
+    grid-auto-flow: dense;
+    justify-items: center;
+    align-items: center;
+}
+.grid-item-flex {
+    border: 1px solid #000;
+    background-color: #999;
+    font-size: 30px;
+    padding: 50px;
+}
+
+/*=================================================================*/
+/* 
+    (ALINEACION HORIZONTAL):
+    justify-content: center;
+    justify-content: start;
+    justify-content: end;
+    justify-content: flex-end;
+    justify-content: flex-end;
+            
+    (ALINEACION VERTICAMENTE ):
+    align-content: center;
+    align-content: flex-start;
+    align-content: flex-end ;
+
+*/
+.grid-container-content {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3,150px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 2px solid #000;
+    background-color: #333;
+    grid-auto-flow: dense;
+    /* alinear filas y columnas */
+    justify-content:start;
+    align-content:flex-end ;
+    /* alinear items */
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+}
+.grid-item-content {
+    border: 1px solid #000;
+    background-color: #999;
+    font-size: 30px;
+    padding: 50px;
+}
+/*=================================================================*/
+/* 
+    justify-content:space-between;
+    justify-content:space-evenly;
+    justify-content:space-around;
+
+    align-content:space-around ;
+    align-content:space-between ;
+    align-content:space-evenly ;
+*/
+
+.grid-container-space {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3,150px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 2px solid #000;
+    background-color: #333;
+    grid-auto-flow: dense;
+    /* alinear filas y columnas */
+    justify-content:space-evenly;
+    align-content:space-evenly ;
+    /* alinear items */
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+}
+.grid-item-space {
+    border: 1px solid #000;
+    background-color: #999;
+    font-size: 30px;
+    padding: 50px;
+}
+/*=================================================================*/
+/* ALINEACION CON SELF */
+.grid-container-self {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 2px solid #000;
+    background-color: #333;
+    grid-auto-flow: dense;
+
+    /* alinear items */
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+}
+.grid-item-self {
+    border: 1px solid #000;
+    background-color: #999;
+    font-size: 30px;
+    padding: 50px;
+}
+/* 
+    justify-self: start;
+    justify-self: end;
+
+    align-self: flex-start;
+    align-self: flex-end;
+
+    Todo esto se abrevia con el place-self:(aling justify)
+    ejemplo:
+    place-self: end start;
+
+*/
+.grid-item-self:first-child {
+    align-self: start;
+    justify-self: start;
+    background: red;
+}
+
+.grid-item-self:nth-child(3) {
+    justify-self: end;
+    align-self: start;
+    background: red;
+}
+.grid-item-self:nth-child(4) {
+    justify-self: flex-end;
+}
+.grid-item-self:nth-child(5) {
+    background: lightgreen;
+}
+.grid-item-self:nth-child(6) {
+    justify-self: flex-start;
+}
+.grid-item-self:nth-child(7) {
+    place-self: end start;
+    background: red;
+}
+.grid-item-self:last-child {
+    align-self: end;
+    justify-self: end;
+    background: red;
+}
+
+/*=================================================================*/
+/* ORDER */
+
+.grid-container-order {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 2px solid #000;
+    background-color: #333;
+    grid-auto-flow: dense;
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+}
+.grid-item-order {
+    border: 1px solid #000;
+    background-color: #999;
+    font-size: 30px;
+    padding: 50px;
+}
+.grid-item-order:first-child {
+    background: red;
+    order: 3;
+}
+.grid-item-order:nth-child(3) {
+    background: lightgreen;
+    order: 2;
+}
+/*=================================================================*/
+
+/*=================================================================*/
+

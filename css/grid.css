@@ -1,0 +1,174 @@
+* {
+    font-weight: 100;
+    font-size: 14px;
+}
+body {
+    background: radial-gradient(circle, #fff,#bbb);
+    padding: 10px;
+}
+h2 {
+    font-size: 18px;
+    color: #262928;
+    font-weight: 700;
+}
+/* GRID_ 
+grid-template-rows (Grid-container)
+grid-template-columns (Grid-container)
+
+ grid-gap: 10px;
+ 
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 150px  1fr 1fr;
+    grid-template-rows: 150px  150px 150px;
+    border: 2px solid #000;
+    grid-gap: 10px;
+}
+
+
+.grid-item {
+    border: 2px solid #000;
+    background-color: #999;
+}
+
+/*  grid-row-gap: 10px; */
+.grid-container-grid-row-gap {
+    display: grid;
+    grid-template-columns: 150px 150px  1fr 1fr;
+    grid-template-rows: 150px  150px 150px;
+    border: 2px solid #000;
+    grid-row-gap: 10px;
+}
+
+/* grid-column-gap: 10px; */
+.grid-container-grid-column-gap {
+    display: grid;
+    grid-template-columns: 150px 150px  1fr 1fr;
+    grid-template-rows: 150px  150px 150px;
+    border: 2px solid #000;
+    grid-column-gap: 10px;
+}
+
+/* =================================================================
+grid-column: 1 / 3;
+grid-row: 1 / 3;
+:nth-child(2) 
+*/
+.grid-container-grid-row-start{
+    display: grid;
+    grid-template-columns: 150px 150px 150px  1fr;
+    grid-template-rows: 150px  150px 150px;
+    border: 2px solid #000;
+    background-color: #333;
+}
+
+/* grid-column: 1 / 3; */
+.grid-container-grid-row-start .grid-item:first-child {
+    background: #900;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+/* 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    SIMPLIFICADO EN 
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+
+    funciones:
+    first-child
+    :nth-child(2)
+    */
+.grid-container-grid-row-start .grid-item:nth-child(2){
+    background: #090;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    grid-column: 3 / 5;
+}
+
+/*=================================================================*/
+/* 
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+
+    REPEAT:
+    grid-template-columns:
+     repeat(4,  1fr) ; =  1fr 1fr  1fr 1fr;
+*/
+.grid-container-grid-span {
+    display: grid;
+    grid-template-columns: repeat(4,  1fr) ;
+    grid-template-rows: 150px  150px 150px;
+    border: 2px solid #000;
+    background-color: #333;
+}
+
+.grid-container-grid-span .grid-item:first-child {
+    background: #900;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/*=================================================================*/
+
+/* Grid Implícito y Explicíto: 
+
+    grid-template-columns: repeat(5,  100px) 1fr;
+    grid-template-rows:repeat(3,  150px) ;
+    grid-auto-columns: 100px;
+    grid-auto-rows: 200px; Para medir la fila 
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+    grid-auto-flow: dense;
+*/
+
+
+.grid-container-implicito-explicito {
+    display: grid;
+    border: 2px solid #000;
+    background-color: #333;
+    grid-template-columns: repeat(3,  150px) 1fr;
+    grid-template-rows:repeat(3,  150px) ;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    /* grid-auto-flow: row; */
+    grid-auto-flow: dense;
+    /* grid-auto-columns: repeat(3, 200px); */
+}
+.grid-container-implicito-explicito .grid-item {
+    background-color: #999;
+    border: 1px solid #000;
+}
+
+.grid-container-implicito-explicito .grid-item:first-child {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.grid-container-implicito-explicito .grid-item:nth-child(3) {
+    grid-column: 5 / 7;
+}
+.grid-container-implicito-explicito .grid-item:nth-child(6) {
+    grid-column: 5 / 8;
+}
+
+.grid-container-implicito-explicito .grid-item:nth-child(8) {
+    grid-row: 3/ 5;
+}
+
+/*=================================================================*/
+
+
+/*=================================================================*/
+
+/*=================================================================*/
+
+/*=================================================================*/
+
+/*=================================================================*/

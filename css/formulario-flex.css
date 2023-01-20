@@ -1,0 +1,109 @@
+* {
+    font-weight: 100;
+    font-size: 14px;
+}
+body {
+    background-color: #000;
+}
+h2 {
+    margin: 20px;
+    font-size: 18px;
+    color: #2da;
+    font-weight: 700;
+    text-align: center;
+}
+/*  */
+.flex-container {
+    display: flex;/* alinear los elementos */
+    align-items: center;/* centrar */
+    flex-wrap: wrap;/* Para cuando sea response se pueda deslizar */
+    justify-content: center;
+    background: #222;
+    margin: 50px 50px;
+    padding: 10px;
+    border: 8px solid #000;
+    outline: 4px solid #1c7
+    
+}
+
+.form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #1c7;
+    /* background: #000; */
+    background: transparent;
+    color: #fff;
+}
+/*  */
+.form__input:focus {
+    /* background: #333; */
+    background: linear-gradient(to bottom, transparent, #111);
+    outline: none;/* Eliminare el border */
+    border-bottom: 3px solid #5f9;
+}
+
+
+.form textarea {
+    min-height: 140px;
+    resize: none;/* Evitar que camniar tamaño del textarea */
+}
+/*  */
+
+/* ========== ESTILO PARA LA IMAGEN ========== */
+.form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px;
+    max-width: 400px;
+    order: 2;
+}
+.form-img div {
+    padding: 10px;
+}
+
+.img-container {
+    margin: auto;
+}
+.img-container div {
+    background-color: #1c7;
+    border-radius:50%;
+    text-align: center;
+    padding: 40px;
+}
+
+.form-img img {
+    width: 90%;
+}
+
+/* ============================================== */
+
+/* ===============  BOTOM STYLE ================= */
+.form input[type=submit]{
+    background:  #094;
+    border-bottom: none;
+    padding: 10px;
+}
+
+.form input[type=submit]:hover {
+    background:  #072;
+    border-bottom: none;
+    padding: 10px;
+}
+.form input[type=submit]:focus {
+    background:  #094;
+}
+.form input[type=submit]:active {
+    background: linear-gradient(to bottom, #072, #050);
+}
+/* ============================================== */

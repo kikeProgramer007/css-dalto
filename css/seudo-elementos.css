@@ -1,0 +1,83 @@
+* {
+    font-weight: 100;
+    font-size: 18px;
+}
+h2 {
+    text-align: center;
+    font-weight: 700;
+    margin: 1em;
+}
+/* SEUDO ELEMENTOS */
+/* Ejemplo de elemento */
+.texto {
+    padding: 10px;
+    /* display: inline; EL first-line, first-letter no funcionan si es tipo linea */
+}
+
+/* El SeudoElemento si aplica a un elemento */
+
+.texto::first-line {/* La primera fila */
+    color: blue;
+    font-size: 2rem;
+}
+
+.texto::first-letter {/* La primera letra */
+    color: red;
+    font-size: 3rem;
+}
+/* PSEUDO-ELEMENTOS:
+    ::placeholder
+*/
+form {
+    margin: 20px auto;
+    display: block;
+    background-color: #555;
+    padding: 20px;
+    width: 60%;
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+}
+input::placeholder {
+    color: brown;
+    font-size: 10px;
+    
+}
+/* PSEUDO-ELEMENTOS:
+    ::selection
+*/
+input::selection  {
+    color: red ;
+    background-color: cadetblue;
+}
+p {
+    padding: 6px;
+    width: 100%;
+    margin: 10px;
+}
+p::selection  {
+    color: #fff ;
+    background-color: #000;
+}
+/* PSEUDO-ELEMENTOS:
+    ::before
+*/
+b {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+}
+b::before  {
+    content: "hola, me suscribi";
+    color: chartreuse;
+}
+
+b::after  {
+    content: "kikeprogrammer";
+    color: darkturquoise;
+    background-color: #000;
+}

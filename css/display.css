@@ -1,0 +1,110 @@
+* {
+    font-weight: 100;
+    font-size: 18px;
+}
+/* DISPLAY BLOCK */
+.display {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    border: 10px solid red;
+    background-color: chartreuse;
+    /* display: inline; solo un linea y no se puede modificar dimensiones */
+   /* display: inline-block;/* coloca uno a lado del otro */
+    display: block;/* por defecto uno debajo de otro */
+}
+b {
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    border: 10px solid red;
+    background-color: chartreuse;
+    /* display: inline; solo un linea y no se puede modificar dimensiones */
+    display: inline-block;/* coloca uno a lado del otro */
+   /* display: block;/* por defecto uno debajo de otro y te permite cambiar resoluciones con el width y height*/
+}
+
+/* OVERFLOW */
+.content-overflow{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height:350px;
+    border: 4px solid red;
+    background: grey;
+    overflow: auto;/* Coloca un scroll si el texto o su contenido sobresale */
+    /*overflow: scroll;/* coloca obligadamente el scroll, aunque no lo requiera */
+    /*overflow-x: scroll;/* coloca scroll en el eje x si el contenido sobresale */
+    /*overflow-y: hidden;/* oculta el scroll de eje y */
+}
+
+.content-overflow-img{
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height:350px;
+    border: 4px solid red;
+    background: grey;
+    overflow: hidden;
+}
+
+
+.transition {
+    width: 300px;
+    position: relative;
+    top: 150px;
+    left: 140px;
+    outline: 2px solid blue;
+    transition: all 1.5s;
+}
+
+div:hover > .transition {
+    width: 230px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    outline: 2px solid blue;
+}
+
+/*  */
+/* FLOAT */
+
+.contenedor {
+   margin: 1em;
+   padding-bottom: 25em;
+}
+
+.contenedor h1 {
+    font-weight: bold;
+    color: red;
+}
+
+.contenedor div {
+    float: left;/* colocar a la izquierda el contenido div */
+    padding: 1em;
+}
+.primario {
+    width: 50%;
+    background: gold;
+}
+.secundario {
+    width: 50%;
+    background: gray;
+}
+/* FLOAT CON IMAGEN : Se recomienda usar solo en estos caso el float*/
+.cont {
+    margin: auto;
+    border: 4px solid chocolate;
+    background: burlywood;
+    width: 80%;
+    padding: 20px;
+}
+.cont p {
+    width: 50%;
+}
+
+.cont img {
+    float: left;
+    width: 150px;
+    margin-right: 18px;
+}

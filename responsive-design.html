@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="css/responsive-design.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+</head>
+
+<body>
+    <h1>RESPONSIVE DESIGN (COMPLETO)</h1>
+    <h2>Media Query</h2>
+    <p>
+        @media screen and (min-width: 400px) and (max-width: 650px)<br>
+        @media screen and (min-width: 650px) and (max-width: 800px)<br>
+        @media screen and (min-width: 800px) and (max-width: 1200px)<br>
+        @media screen and (min-width: 1200px)<br>
+    </p>
+    <div class="div-responsive">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae numquam sit voluptatem libero sunt qui exercitationem facilis laboriosam iusto animi culpa aliquam quae aspernatur, distinctio eaque excepturi itaque doloremque incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae numquam sit voluptatem libero sunt qui exercitationem facilis laboriosam iusto animi culpa aliquam quae aspernatur, distinctio eaque excepturi itaque doloremque incidunt.
+    </div>
+
+    <br>
+    <h2>LO QUE SE VERA:</h2>
+    <ol start="1">
+        <li>OUTLINE</li>
+        <li>POSITION:
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </li>
+        <li>Z-INDEX
+            <ul>
+                <li>Solo el elementos posicionados conflictos de hijos y padres</li>
+            </ul>
+        </li>
+        <li>DISPLAY:
+            <ul>
+                <li style="color:red ;">Block</li>
+                <li style="color:red ;">Inline</li>
+                <li style="color:red ;">Inline-Block</li>
+                <li>Table</li>
+                <li>Inline-Table</li>
+                <li>List-Item</li>
+                <li>Table-Cell</li>
+                <li>Table-Row</li>
+                <li>Table-Column</li>
+                <li>Grid</li>
+            </ul>
+        </li>
+        <del style="color:red ;">
+            <li>OVERFLOW: (X,Y) AUTO, HIDDEN, SCROLL</li>
+            <li >FLOAT: (Left, Right, None, Inherit)</li>
+            <li>PSEUDO-ELEMENTOS:
+                <ul>
+                    <li>::First-line    | BLOCK (inline-block)</li>
+                    <li>::First-letter  | BLOCK (inline-block)</li>
+                    <li>::placeholder</li>
+                    <li>::selection</li>
+                    <li>::after         | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                    <li>::before        | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                </ul>
+            </li>
+            <li>PSEUDO-CLASES:
+                <ul>
+                    <li>:hover</li>
+                    <li>:link</li>
+                    <li>:visited</li>
+                    <li>:actived</li>
+                    <li>:focus</li>
+                    <li>:lang</li>
+                </ul>
+            </li>
+            <li>OBJECT-FIT: Fil
+                <ul>
+                    <li>Contain</li>
+                    <li>Cover</li>
+                    <li>None</li>
+                    <li>Scale-Down</li>
+                </ul>
+            </li>
+            <li>OBJECT-POSITION:
+                <ul>
+                    <li>Left</li>
+                    <li>Right</li>
+                    <li>Top</li>
+                    <li>Button</li>
+                    <li>PX</li>
+                    <li>EM</li>
+                    <li>%</li>
+                    <li>ETC</li>
+                </ul>
+            </li>
+        
+            <li>CURSOR:
+                <ul>
+                    <li><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor" target="_blank" rel="noopener noreferrer">https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor</a></li>
+                </ul>
+            </li>
+            <li>COLORES: Color Name
+                <ul>
+                    <li>Hexadecimal</li>
+                    <li>RGB</li>
+                    <li>RGBA</li>
+                    <li>HSL</li>
+                    <li>HSLA</li>
+                </ul>
+            </li>
+      
+            <li>RESPONSIVE DESING - MOBILE FIRST</li>
+            <li>FLEXBOX:
+                <ul>
+                    <li>Contenedor y Contenido</li>
+                    <li>Flex Container - Flex Item</li>
+                    <li>Main Axis (Main-Start - Main-End)</li>
+                    <li>Cross Axis (Cross-Start - Cross-End)</li>
+                    <li>Propiedades:
+                        <ul>
+                            <li>Flex-Direction</li>
+                            <li>Flex-Wrap: No-wrap - Wrap -Wrap-reverse;</li>
+                            <li>Flex-Flow: flex-direction flex-wrap;</li>
+                            <li>Justify-Content: center, space-arround, space-between, space-evely (main axis)</li>
+                            <li>Aling-items: flex-start, center, flex-end, stretch, baseline (cross axis)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+    
+            <li>PROPIEDADES DE LOS ITEMS:
+                <ul>
+                    <li>Aling-Self (Cross Axis)</li>
+                    <li>Funcionamiento de Margin:
+                        Margin-(direction): auto -> margin = contenedor - tamaño de la caia en eje en el que corre (direction)
+                    </li>
+                    <li>Flex-grow: (Espacio asignado + sobrante / grows)(Main Axiz)</li>
+        
+                    <li>Flex-shrink: Espacio que "cede" (Main Axis)</li>
+                    <li>Flex-basis: Medicion antes de encogerse (En auto(defect value), agarra el width, y sí no tiene mas propiedad)(Main Axis)</li>
+                    <li>Flex: flex-grow, flex-shrink, flex-basis(al menos el primer parametro obligatorio)</li>
+                    <li>Order: Como el z index, pero en el eje en el que apunta el main axis</li>
+                </ul>
+            </li>
+        </del>
+        <del>
+        <li>GRID:
+            <ul>
+                <li>Conceptos Basicos:
+                    <ul>
+                        <li>Grid container</li>
+                        <li>Grid item</li>
+                        <li>Grid Cell</li>
+                        <li>Grid Tracks (Column y Row)</li>
+                        <li>Grid Area</li>
+                        <li>Grid Line (Column Line y Row Line)</li>
+                    </ul>
+                </li>
+                <li>Propiedades:
+                    <ul>
+                        <li>grid-template-rows (Grid-container)</li>
+                        <li>grid-template-columns (Grid-container)</li>
+                        <li>grid-row-gap (Grid-container)</li>
+                        <li>grid-column-gap (Grid-container)</li>
+                        <li>grid-gap: row column (Grid-container)</li>
+                        <li>grid-row-start (Grid-item)</li>
+                        <li>grid-row-end (Grid-item)</li>
+                        <li>grid-column-start (Grid-item)</li>
+                        <li>grid-row (Grid-item)</li>
+                        <li>grid-column (Grid-item)</li>
+                        <li>unidades "auto" y fr</li>
+                        <li>repeat(cantidad, tamaño/s)</li>
+                    </ul>
+                </li>
+                <li>Grid Implícito y Explicíto:
+                    <ul>
+                        <li>3 nuevas propiedades del grid implicito</li>
+                        <li>grid-auto-rows (Igual que el template)</li>
+                        <li>grid-auto-columns (Igual que el template)</li>
+                        <li>grid-auto-flow: Row(Default), Column y Dense</li>
+                    </ul>
+                </li>
+                <li>Grid Dinámico:
+                    <ul>
+                        <li>minmax()</li>
+                        <li>mincontent</li>
+                        <li>maxcontent</li>
+                        <li>cantidad:</li>
+                        <li>auto-fill</li>
+                        <li>auto-fit</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    
+            <li>ALINEACION Y CONTROL DE FLUJO
+                <ul>
+                    <li>Diferencia con flex:
+                        <ul>
+                            <li>La alineacion es dentro de cada celda y no alineacion total del flex container</li>
+                            <li>cada celda seria un "flex container"</li>
+                        </ul>
+                    </li>
+                    <li>Propiedades del grid-container:
+                        <ul>
+                            <li>justify-items (Horizontalmente)</li>
+                            <li>aling-items (Verticalemente)</li>
+                            <li>stretch(default) - start - center - end</li>
+                            <li>place-items: aling-items justify-items</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        
+
+            <li>ALINEACION DE FILAS Y COLUMNAS:
+                <ul>
+                    <li>justify-content (horizontalmente)</li>
+                    <li>align-content (verticalmente)</li>
+                    <li>stretch(default) start - center - end</li>
+                    <li>Mas las de flex : *space-arround ; *space-between ; *space-evenly</li>
+                </ul>
+            </li>
+            <li>APLICADO AL grid ITEM:
+                <ul>
+                    <li>align-self</li>
+                    <li>justify-self</li>
+                    <li>place-self: align-self justify-self</li>
+                    <li>stretch(default) - start - center - end</li>
+                    <li>order (igual que en el flex)</li>
+                </ul>
+            </li>
+         </del>
+         <li>GALERIA</li>
+         <li>GRID AREAS:
+            <ul>
+                <li>Al grid Container:
+                    <ul>
+                       <li>grid-template-areas: "nombre/s de area/s"</li>
+                    </ul>
+                </li>
+                <li>Al grid Item:
+                    <ul>
+                        <li>grid-area: "nombre de area"</li>
+                     </ul>
+                </li>
+            </ul>
+         </li>
+         <li>NOMBRES A LAS LINEAS:
+            <ul>
+                <li>[line-name]
+                    <ul>
+                        <li>Se puede reemplazar en: GRID-ROM | GRID-COLUMN</li>
+                    </ul>
+                </li>
+            </ul>
+         </li>
+         <li>SHORTHAND:
+            <ul>
+                <li>Grid-template: row / columns (Grid-container)</li>
+                <li>Grid-template: area unidad</li>
+            </ul>
+         </li>
+         <li>RESPONSIVE DESIGN (COMPLETO):
+            <ul>
+                <li>Estructuras flexibles (contenedores flexibles, imagenes, y video flexibles)</li>
+                <li>Media Queries</li>
+                <li>@Media se usa en consultas de medios para aplicar diferentes estilos para diferentes tipos / dispositivos de medios.
+                    <ul>
+                        <li>all : <br> Apto para todos los dispositivos.</li>
+                        <li>print : <br>Destinado a material impreso y visualizacion de documentos en una pantalla en el modo de vista previa de impresión.</li>
+                        <li>screen :<br> Destinado principalmente a las pantallas.</li>
+                        <li>speech : <br>Destinado a sintetizadores de voz.</li>
+                    </ul>
+                </li>
+                <li>Operadores AND | OR</li>
+                <li>Orientacion : landscape y portrait</li>
+            </ul>
+         </li>
+        </ol>
+</body>
+
+</html>

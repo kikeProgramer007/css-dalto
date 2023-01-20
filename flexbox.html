@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+
+<body>
+    <h1>FLEXBOX:</h1>
+    <img src="img/flexbox.png" alt="flexBox" width="500px">
+   
+    <h2>flex-direction: row;</h2>
+    <div class="flex-container-row">
+        <div class="flex-item2 orange">1
+        </div>
+        <div class="flex-item2">2
+        </div>
+        <div class="flex-item2">3
+        </div>
+        <div class="flex-item2">4
+        </div>
+        <div class="flex-item2">5
+        </div>
+        <div class="flex-item2">6
+        </div>
+    </div>
+    <h2>flex-direction: row-reverse;</h2>
+    <div class="flex-container-row-reverse">
+        <div class="flex-item2 orange">1
+        </div>
+        <div class="flex-item2">2
+        </div>
+        <div class="flex-item2">3
+        </div>
+        <div class="flex-item2">4
+        </div>
+        <div class="flex-item2">5
+        </div>
+        <div class="flex-item2">6
+        </div>
+    </div>
+    <h2>flex-direction: column;</h2>
+    <div class="flex-container-column">
+        <div class="flex-item2 orange">1
+        </div>
+        <div class="flex-item2">2
+        </div>
+        <div class="flex-item2">3
+        </div>
+        <div class="flex-item2">4
+        </div>
+        <div class="flex-item2">5
+        </div>
+        <div class="flex-item2">6
+        </div>
+    </div>
+    <h2>flex-direction: column-reverse;</h2>
+    <div class="flex-container-column-reverse">
+        <div class="flex-item2 orange">1
+        </div>
+        <div class="flex-item2">2
+        </div>
+        <div class="flex-item2">3
+        </div>
+        <div class="flex-item2">4
+        </div>
+        <div class="flex-item2">5
+        </div>
+        <div class="flex-item2">6
+        </div>
+    </div>
+    <h2>flex-wrap: wrap;</h2>
+    <div class="flex-container-wrap">
+        <div class="flex-item-wrap orange">1 Caja flexible
+        </div>
+        <div class="flex-item-wrap">2 Caja flexible
+        </div>
+        <div class="flex-item-wrap">3 Caja flexible
+        </div>
+        <div class="flex-item-wrap">4 Caja flexible
+        </div>
+        <div class="flex-item-wrap">5 Caja flexible
+        </div>
+        <div class="flex-item-wrap green">6 Caja flexible
+        </div>
+    </div>
+    <h2>flex-flow: column wrap;</h2>
+    <div class="flex-container-column-wrap">
+        <div class="flex-item-wrap orange">1 Caja flexible
+        </div>
+        <div class="flex-item-wrap">2 Caja flexible
+        </div>
+        <div class="flex-item-wrap">3 Caja flexible
+        </div>
+        <div class="flex-item-wrap">4 Caja flexible
+        </div>
+        <div class="flex-item-wrap">5 Caja flexible
+        </div>
+        <div class="flex-item-wrap green">6 Caja flexible
+        </div>
+    </div>
+    <h2>JUSTIFY-CONTENT</h2>
+    <h2>justify-content: center; </h2>
+    <div class="flex-container-justify-content-center">
+        <div class="flex-item2 orange">1 box
+        </div>
+        <div class="flex-item2">2 box
+        </div>
+        <div class="flex-item2">3 box
+        </div>
+        <div class="flex-item2">4 box
+        </div>
+    </div>
+    <h2>justify-content: space-around; </h2>
+    <div class="flex-container-justify-content-space-around">
+        <div class="flex-item2 orange">1 box
+        </div>
+        <div class="flex-item2">2 box
+        </div>
+        <div class="flex-item2">3 box
+        </div>
+        <div class="flex-item2">4 box
+        </div>
+    </div>
+    <h2> justify-content: space-between;</h2>
+    <div class="flex-container-justify-content-space-between">
+        <div class="flex-item2 orange">1 box
+        </div>
+        <div class="flex-item2">2 box
+        </div>
+        <div class="flex-item2">3 box
+        </div>
+        <div class="flex-item2">4 box
+        </div>
+    </div>
+    <h2> justify-content: space-evenly;</h2>
+    <div class="flex-container-justify-content-space-evenly">
+        <div class="flex-item2 orange">1 box</div>
+        <div class="flex-item2">2 box</div>
+        <div class="flex-item2">3 box</div>
+        <div class="flex-item2">4 flexBox</div>
+    </div>
+
+    <h2> justify-content: space-evenly;</h2>
+    <div class="flex-container-justify-content-space-evenly">
+        <div class="flex-item2 orange">1 box</div>
+        <div class="flex-item2">2 box</div>
+        <div class="flex-item2">3 box</div>
+        <div class="flex-item2">4 flexBox</div>
+    </div>
+
+    <h2> PROPIEDAD ALING ITEMS</h2>
+    <h2>  align-items: center;       Centrar verticalmente</h2>
+    <div class="flex-container-aling-items-center">
+        <div class="flex-item2 orange">1 box</div>
+        <div class="flex-item2">2 box</div>
+        <div class="flex-item2">3 box</div>
+        <div class="flex-item2">4 flexBox</div>
+    </div>
+    <h2>  align-items: flex-end;       inferior verticalmente</h2>
+    <div class="flex-container-aling-items-flex-end">
+        <div class="flex-item2 orange">1 box</div>
+        <div class="flex-item2">2 box</div>
+        <div class="flex-item2">3 box</div>
+        <div class="flex-item2">4 flexBox</div>
+    </div>
+    <h2>  align-items: baseline;       superior verticalmente</h2>
+    <div class="flex-container-aling-items-baseline">
+        <div class="flex-item2 orange">1 box</div>
+        <div class="flex-item2">2 box</div>
+        <div class="flex-item2">3 box</div>
+        <div class="flex-item2">4 flexBox</div>
+    </div>
+
+    <h2>  align-items: flex-start;       evitar la alteracion de height en items</h2>
+    <div class="flex-container-aling-items-flex-start">
+        <div class="flex-item-flex-start orange">1 box</div>
+        <div class="flex-item-flex-start">2 box</div>
+        <div class="flex-item-flex-start">3 box</div>
+        <div class="flex-item-flex-start">4 box</div>
+        <div class="flex-item-flex-start">5 box</div>
+        <div class="flex-item-flex-start">6 box</div>
+        <div class="flex-item-flex-start">7 box</div>
+        <div class="flex-item-flex-start">8 box</div>
+        <div class="flex-item-flex-start">9 box</div>
+    </div>
+
+    <h2>  align-content: flex-start;       evitar la alteracion de height en items</h2>
+    <div class="flex-container-aling-content-flex-start">
+        <div class="flex-item-flex-start orange">1 box</div>
+        <div class="flex-item-flex-start">2 box</div>
+        <div class="flex-item-flex-start">3 box</div>
+        <div class="flex-item-flex-start">4 box</div>
+        <div class="flex-item-flex-start">5 box</div>
+        <div class="flex-item-flex-start">6 box</div>
+        <div class="flex-item-flex-start">7 box</div>
+        <div class="flex-item-flex-start">8 box</div>
+        <div class="flex-item-flex-start">9 box</div>
+    </div>
+
+    <h2>  align-content: baseline;  se adapta de abajo hacia arriba </h2>
+    <div class="flex-container-aling-content-baseline">
+        <div class="flex-item-baseline orange">1 box</div>
+        <div class="flex-item-baseline">2 box</div>
+        <div class="flex-item-baseline">3 box</div>
+        <div class="flex-item-baseline">4 box</div>
+        <div class="flex-item-baseline">5 box</div>
+        <div class="flex-item-baseline">6 box</div>
+        <div class="flex-item-baseline">7 box</div>
+        <div class="flex-item-baseline">8 box</div>
+        <div class="flex-item-baseline">9 box</div>
+    </div>
+
+    <br>
+    
+       <!-- <p>Se ajusta al contenido para martener la misma altura:</p>
+     <div class="flex-container">
+        <div class="flex-item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam praesentium dolor, officiis fugit repellendus exercitationem non unde labore? Explicabo et eveniet ipsum rem ad pariatur! Ab rem esse nesciunt illo! labore? Explicabo et eveniet ipsum rem ad pariatur! Ab rem esse nesciunt illo!unde labore? Explicabo et eveniet ipsum rem ad pariatur! Ab rem esse nesciunt illo! labore? Explicabo et eveniet ipsum rem ad pariatur! Ab rem esse nesciunt illo!
+        </div>
+        <div class="flex-item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam praesentium dolor, officiis fugit repellendus exercitationem non unde labore? Explicabo et eveniet ipsum rem ad pariatur! Ab rem esse nesciunt illo! labore? Explicabo et eveniet ipsum rem ad pariatur! Ab rem esse nesciunt illo!
+        </div>
+    </div> -->
+<h2>LO QUE SE VERA:</h2>
+<ol start="1">
+    <li>OUTLINE</li>
+    <li>POSITION:
+        <ul>
+            <li>Static</li>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </li>
+    <li>Z-INDEX
+        <ul>
+            <li>Solo el elementos posicionados conflictos de hijos y padres</li>
+        </ul>
+    </li>
+    <li>DISPLAY:
+        <ul>
+            <li style="color:red ;">Block</li>
+            <li style="color:red ;">Inline</li>
+            <li style="color:red ;">Inline-Block</li>
+            <li>Table</li>
+            <li>Inline-Table</li>
+            <li>List-Item</li>
+            <li>Table-Cell</li>
+            <li>Table-Row</li>
+            <li>Table-Column</li>
+            <li>Grid</li>
+        </ul>
+    </li>
+    <del style="color:red ;">
+        <li>OVERFLOW: (X,Y) AUTO, HIDDEN, SCROLL</li>
+        <li >FLOAT: (Left, Right, None, Inherit)</li>
+        <li>PSEUDO-ELEMENTOS:
+            <ul>
+                <li>::First-line    | BLOCK (inline-block)</li>
+                <li>::First-letter  | BLOCK (inline-block)</li>
+                <li>::placeholder</li>
+                <li>::selection</li>
+                <li>::after         | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                <li>::before        | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+            </ul>
+        </li>
+        <li>PSEUDO-CLASES:
+            <ul>
+                <li>:hover</li>
+                <li>:link</li>
+                <li>:visited</li>
+                <li>:actived</li>
+                <li>:focus</li>
+                <li>:lang</li>
+            </ul>
+        </li>
+        <li>OBJECT-FIT: Fil
+            <ul>
+                <li>Contain</li>
+                <li>Cover</li>
+                <li>None</li>
+                <li>Scale-Down</li>
+            </ul>
+        </li>
+        <li>OBJECT-POSITION:
+            <ul>
+                <li>Left</li>
+                <li>Right</li>
+                <li>Top</li>
+                <li>Button</li>
+                <li>PX</li>
+                <li>EM</li>
+                <li>%</li>
+                <li>ETC</li>
+            </ul>
+        </li>
+    
+        <li>CURSOR:
+            <ul>
+                <li><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor" target="_blank" rel="noopener noreferrer">https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor</a></li>
+            </ul>
+        </li>
+        <li>COLORES: Color Name
+            <ul>
+                <li>Hexadecimal</li>
+                <li>RGB</li>
+                <li>RGBA</li>
+                <li>HSL</li>
+                <li>HSLA</li>
+            </ul>
+        </li>
+    </del>
+        <li>RESPONSIVE DESING - MOBILE FIRST</li>
+        <li>FLEXBOX:
+            <ul>
+                <li>Contenedor y Contenido</li>
+                <li>Flex Container - Flex Item</li>
+                <li>Main Axis (Main-Start - Main-End)</li>
+                <li>Cross Axis (Cross-Start - Cross-End)</li>
+                <li>Propiedades:
+                    <ul>
+                        <li>Flex-Direction</li>
+                        <li>Flex-Wrap: No-wrap - Wrap -Wrap-reverse;</li>
+                        <li>Flex-Flow: flex-direction flex-wrap;</li>
+                        <li>Justify-Content: center, space-arround, space-between, space-evely (main axis)</li>
+                        <li>Aling-items: flex-start, center, flex-end, stretch, baseline (cross axis)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Propiedades de los Items:
+            <ul>
+                <li>Aling-Self (Cross Axis)</li>
+            </ul>
+        </li>
+        <li>Funcionamiento de Margin:
+            Margin-(direction): auto -> margin = contenedor - tamaño de la caia en eje en el que corre (direction)
+        </li>
+    </ol>
+</body>
+
+</html>

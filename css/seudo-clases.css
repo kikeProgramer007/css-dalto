@@ -1,0 +1,106 @@
+* {
+    font-weight: 100;
+    font-size: 18px;
+}
+h2 {
+    text-align: center;
+    font-weight: 700;
+    margin: 1em;
+}
+.box1 {
+    margin: 20px auto;
+    display: block;
+    background-color: steelblue;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    /* transition: background 1s, height 1s, width 2s; */
+    transition: all 1s, border 0.5s;
+    border: 3px solid blue;
+}
+
+.box1:hover{
+    background: darkslateblue;
+    height: 200px;
+    width: 200px;
+    border-color: red;
+}
+
+.boton-hover {
+    padding: 7px;
+    background-color: darkslateblue;
+    transition: background 0.5s;
+    color: #000;
+}
+
+.boton-hover:hover {
+    padding: 10px;
+    background: slateblue;
+    color: #fff;
+}
+
+/* LINK
+ :link */
+.enlace {
+    padding: 7px;
+    display: block;
+}
+
+a:link{/* Estilo a los que estan sin visitar */
+    color: red;
+    font-size: 20px;
+    background-color: blue;
+    display: block;
+}
+/* LINK
+ :visited */
+a:visited {/* afecta a link visitado */
+    color: green;
+    background-color: darksalmon;
+    display: block;
+}
+a{/* Tiene menos privilegios q el link y visited */
+color: darkorange;
+}
+/* LINK
+ :active */
+.caja1 {
+    width:200px;
+    height: 200px;
+    background: red;
+    margin: 25px;
+    transition: all 1s;
+}
+
+.caja1:active {
+    background: blue;
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+}
+/* LINK
+ :focus */
+.input {
+    background: darksalmon;
+    margin: 10px;
+    transition: all 1s;
+}
+
+.input:focus {
+    background: darkgray;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* LANG */
+.clase-lang {
+   margin: 10px; 
+}
+.clase-lang b:lang(en) {
+    background: darkseagreen;
+    padding: 10px;
+}
+.clase-lang b:lang(es) {
+    background: chartreuse;
+    padding: 10px;
+}

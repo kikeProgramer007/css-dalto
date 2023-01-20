@@ -1,0 +1,62 @@
+/* CSS Selectores
+    Universal       - OK
+    De Tipo         - OK
+    Clases          - OK
+    ID              - OK
+    Por Atributto   - OK
+    Descendiente    - OK
+    Pseudo-Clases   - OK
+*/
+/* Universal */
+*{
+    color: red;
+}
+/* Por tipo */
+h2{
+    color: red;
+}
+
+input {
+    color: aqua;
+}
+/* Por Clases */
+
+.titulo-h2{
+    color: green;
+}
+
+/* Por ID */
+#element{
+    color: blue;
+}
+
+/* Por atributo */
+[atributo="si"]{
+    color:   brown;
+}
+
+/* Por Descendiente */
+form button {
+    color: darkblue;
+}
+
+.main p span{
+    color: black;
+}
+
+/* Por Pseudo-Clases */
+.formulario button:hover{
+    color: green;
+}
+
+/* Jerarquia de stylos */
+
+.color-black{
+    color: black;
+}
+#color-blue{
+    color: blue;
+}
+h3 {
+    color: deeppink !important;
+}

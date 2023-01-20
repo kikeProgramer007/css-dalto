@@ -1,0 +1,19 @@
+* {
+    font-weight: 100;
+    /* font-size: 14px; */
+}
+ol > del > li {
+    font-weight: 700;
+}
+ol > li {
+    font-weight: 700;
+}
+/*  */
+/* ESTRUCTURA RESPONSIVE BASICA*/
+.content {
+    display: flex; /* COLOCAR EN LINEA */
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ================================================================== */

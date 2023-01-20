@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <link rel="stylesheet" type="text/css" href="css/seudo-clases.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+</head>
+
+<body>
+    <h1>SEUDO-ELEMENTOS</h1>
+
+    <h2>:hover</h2>
+
+    <div class="box1">
+      <b>a</b>
+    </div>
+
+    <center>
+        <button class="boton-hover">
+            <b>botom</b>
+        </button>
+    </center>
+
+    <h2>:link & :visited</h2>
+    <a href="http://soykike.com?gdgfdgf" target="_blank" class="enlace" rel="noopener noreferrer">Enlace</a>
+    <a href="http://facebook.com?fdfgdgf" target="_blank" class="enlace" rel="noopener noreferrer">Enlace</a>
+    <a href="http://youtube.com?fdgfd" target="_blank" class="enlace" rel="noopener noreferrer">Enlace</a>
+    <a href="http://twitter.com?fdfsd" target="_blank" class="enlace" rel="noopener noreferrer">Enlace</a>
+
+    <h2>:actived: click sobre el elemento</h2>
+    <div class="caja1"></div>
+
+    <h2>:focus: solo funciona para los input</h2>
+    <input class="input" type="text">
+
+    <h2>:lang: cambia el estilo segun atributo de lenguaje lang="en"</h2>
+    <div class="clase-lang">
+        <b lang="en">hellow how are you</b>
+        <b>hola como estas</b>
+    </div>
+<br>
+<br>
+    <h1>LO QUE SE VERA:</h1>
+    <ol start="1">
+        <li>OUTLINE</li>
+        <li>POSITION:
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </li>
+        <li>Z-INDEX
+            <ul>
+                <li>Solo el elementos posicionados conflictos de hijos y padres</li>
+            </ul>
+        </li>
+        <li>DISPLAY:
+            <ul>
+                <li style="color:red ;">Block</li>
+                <li style="color:red ;">Inline</li>
+                <li style="color:red ;">Inline-Block</li>
+                <li>Table</li>
+                <li>Inline-Table</li>
+                <li>List-Item</li>
+                <li>Table-Cell</li>
+                <li>Table-Row</li>
+                <li>Table-Column</li>
+                <li>Grid</li>
+            </ul>
+        </li>
+        <del style="color:red ;">
+            <li>OVERFLOW: (X,Y) AUTO, HIDDEN, SCROLL</li>
+            <li >FLOAT: (Left, Right, None, Inherit)</li>
+            <li>PSEUDO-ELEMENTOS:
+                <ul>
+                    <li>::First-line    | BLOCK (inline-block)</li>
+                    <li>::First-letter  | BLOCK (inline-block)</li>
+                    <li>::placeholder</li>
+                    <li>::selection</li>
+                    <li>::after         | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                    <li>::before         | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                </ul>
+            </li>
+            <li>PSEUDO-CLASES:
+                <ul>
+                    <li>:hover</li>
+                    <li>:link</li>
+                    <li>:visited</li>
+                    <li>:actived</li>
+                    <li>:focus</li>
+                    <li>:lang</li>
+                </ul>
+            </li>
+        </del>
+        <li>OBJECT-FIT: Fil
+            <ul>
+                <li>Contain</li>
+                <li>Cover</li>
+                <li>None</li>
+                <li>Scale-Down</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+* {
+    font-weight: 100;
+    font-size: 14px;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+/* flex ayuda adaptarse a su contenedor */
+/*  */
+.flex-container {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    /* display: block; */
+} 
+.flex-item {
+    background-color: #248;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+.flex-item2 {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+
+/* FLEX-DIRECTION */
+/* 
+    flex-direction: row;        --> Direcion x defecto (eje x)
+    flex-direction: column;     --> Direcion en columna (eje y)
+    flex-direction: row-reverse;  -->direcion en eje x pero resverso
+    flex-direction: column-reverse; --> abajo paa arriba (eje y)
+ */
+
+.flex-container-row {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-direction: row;
+}
+.flex-container-row-reverse {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-direction: row-reverse;
+}
+.flex-container-column {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-direction: column;
+}
+.flex-container-column-reverse {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-direction: column-reverse;
+}
+/* FLEX-WRAP*/
+/* 
+    flex-wrap: wrap;       --> Ayuda a adaptarse a la resolucion y mantiene dimensciones 
+    flex-wrap: nowrap;      --> Denegar wrap  
+*/
+.flex-container-wrap {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-wrap: wrap;
+}
+.flex-container-column-wrap {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: column wrap;
+}
+
+.flex-item-wrap {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    height: 110px;
+    text-align: center;
+    min-width: 120px;/* Este se complementa con wrap para q se adapte */
+    flex: 1;/* Este se complementa con wrap para q se adapte */
+}
+
+/* JUSTIFY CONTENT ES PARA CENTRAR EL CONTENIDO */
+/* 
+    justify-content: center;        -->Centrar contenido
+    justify-content: space-around;  -->dar separacion vertical de items
+    justify-content: space-between; -->Darle la max separcion entre items
+    justify-content: space-evenly;
+*/
+.flex-container-justify-content-center {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: nowrap;
+    justify-content: center;
+}
+.flex-container-justify-content-space-around {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: nowrap;
+    justify-content: space-around;
+}
+.flex-container-justify-content-space-between {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+
+.flex-container-justify-content-space-evenly {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+}
+
+/* JUSTIFY CONTENT CON ALING-ITEMS */
+/* 
+    align-items: stretch;        -->Por defecto
+    align-items: center;         -->centrar verticalmente
+    align-items: flex-end;       -->Darle la max separcion entre items
+    align-items: baseline;
+    align-items: flex-start;     -->Evita que se estire el height del items
+*/
+.flex-container-aling-items-center {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    height: 200px;
+    margin: 10px;
+    background:greenyellow; 
+    align-items: center;
+}
+.flex-container-aling-items-flex-end {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    height: 200px;
+    margin: 10px;
+    background:greenyellow; 
+    align-items: flex-end;
+}
+.flex-container-aling-items-baseline {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    height: 200px;
+    margin: 10px;
+    background:greenyellow; 
+    align-items: baseline;
+}
+.flex-container-aling-items-flex-start {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    height: 200px;
+    margin: 10px;
+    background:greenyellow; 
+    align-items: flex-start;
+}
+.flex-item-flex-start {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    min-width: 120px;/* Este se complementa con wrap para q se adapte */
+    text-align: center;
+  
+}
+/* ALING-CONTENT */
+/* 
+    align-content: flex-start;      -->Por defecto
+    align-content: flex-end;        -->centrar verticalmente
+    align-content: baseline;
+*/
+.flex-container-aling-content-flex-start {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    height: 200px;
+    margin: 10px;
+    background:greenyellow; 
+    align-content: flex-start;
+}
+.flex-container-aling-content-baseline {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    flex-flow: wrap-reverse;
+    justify-content: space-evenly;
+    height: 350px;
+    margin: 10px;
+    background:greenyellow; 
+    align-content: baseline;
+}
+.flex-item-baseline {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    min-width: 120px;/* Este se complementa con wrap para q se adapte */
+    text-align: center;
+    height: 100px;
+}
+.orange {
+    background: orange;
+}
+.green {
+    background: green;
+}

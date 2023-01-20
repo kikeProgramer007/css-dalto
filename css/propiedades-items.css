@@ -1,0 +1,155 @@
+* {
+    font-weight: 100;
+    font-size: 14px;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+/* Aling-Self  */
+/* 
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-start;
+    align-self: baseline;
+*/
+.flex-container-aling-self {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    justify-content: space-evenly;
+    height: 300px;
+    background: chartreuse;
+}
+
+.aling-self {
+    background: green;
+    align-self: center;
+}
+
+.flex-item {
+    background-color: #248;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    min-width: 100px;
+    height: 70px;
+}
+/* -direction  */
+/* 
+    margin-top: auto;
+    margin-left: auto ;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin: auto;
+*/
+.flex-container-margin-auto {
+    display: flex;/* ayuda a adaptarse mediante columnas */
+    height: 300px;
+    background: chartreuse;
+}
+.flex-item-margin-auto {
+    background-color: #248;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    min-width: 100px;
+    height: 70px;
+
+    /* margin-top: auto;
+    margin-left: auto ;
+    margin-bottom: auto;
+    margin-right: auto; */
+
+    margin: auto;
+
+}
+/* FLEX GROW 
+  flex-grow: 1;
+  
+
+  .orange {
+    flex-shrink = .5
+    }
+
+*/
+/*  */
+.flex-container-flex-row {
+    display: flex;
+    height: 300px;
+    background: chartreuse;
+    flex-wrap: wrap;/* bajo abajo cuando los item cuando se cumpla el min-width */
+}
+.flex-item-flex-row {
+    background-color: #248;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    min-width: 200px;
+    height: 70px;
+    flex-grow: 3;
+}
+
+.orange {
+    background: orange;
+}
+.green {
+    background: green;
+}
+
+/* FLEX-SHRINK && FLEX-BASIS- */
+.flex-container-Flex-shrink-basis {
+    display: flex;
+    height: 300px;
+    background: chartreuse;
+ 
+}
+
+.flex-item-shrink-basis {
+    background-color: #248;
+    color: #fff;
+    padding: 10px;
+    min-width: 230px;
+    height: 70px;
+    flex-grow: 1;
+    width: 200px;
+}
+
+.orange-shrink-basis {
+    background: orange;
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+.green-shrink-basis {
+    background: green;
+}
+
+/* ORDER ITEMS CAJA FLEXIBLE
+ORDER DEPENDE DE  flex-direction
+*/
+
+.flex-container-order {
+    height: 300px;
+    background: chartreuse;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item-order {
+    background-color: #248;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    min-width: 200px;
+    height: 70px;
+    width: 300px;
+    flex: 1;
+}
+
+.orange-order {
+    background: orange;
+    flex: 1 0 50px;
+    order: 70;
+}
+.green-order {
+    background: green;
+    order: 20;
+}

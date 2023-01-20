@@ -1,0 +1,99 @@
+* {
+    font-weight: 100;
+    font-size: 18px;
+}
+/*  */
+h2 {
+    background-color: blueviolet;
+    display: inline-block;
+
+    /* PADDING */
+    /*padding: 10px 20px 30px 40px;*//* top,right,bottom,left */
+    padding: 50px;
+    /* 
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    */
+
+    border-radius: 2em;/* 10px o 50% o 2em*/
+    border: 3px solid #a22;/* double,solid,dashed,groove,inset,ridge */
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px; /* px alrededor del box */
+    box-shadow: 10px 10px 15px 0px #000;
+    text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff ;
+    transform: rotate(-45deg);/* Rotar -+*/
+}
+/*  */
+/* OUTLINE */
+.caja1_ {
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: auto;/* centrar horizontalmente */
+    /* border: 10px solid black; */
+    outline: 10px solid black;/* no altera el espacio */
+    box-sizing: content-box;
+}
+.caja2_ {
+    width: 200px;
+    height: 200px;
+    background: blueviolet;
+    margin: auto;/* centrar horizontalmente */
+
+}
+
+.caja3 {
+    /* outline: 5px solid red; */
+    position: relative;
+    border: 5px solid red;
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    background: blueviolet;
+    /* display: inline-block; */
+    display: block;
+}
+/*  */
+/* POSITION 
+   Relative: mantiene la pocision y permite el uso del top,bottom,left,right y z-index
+*/
+.box1 {
+    background-color: orange;
+    top: 20px;
+}
+.box2 {
+    background-color: lightblue;
+    position: relative; 
+    top:  50px;
+    left: 30px;
+    /* right: 20px;
+    bottom: 20px; */
+    z-index: 100;/* Da privelegio de estar encima de otro */
+}
+.box3 {
+    background-color: yellow;
+    top: 20px;
+    position: relative;
+    z-index: 50;
+}
+.box4 {
+    background-color: green;
+}
+
+.contenedor {
+    width: 300px;
+    height: 300px;
+    position: sticky;
+  
+}
+.hijo {
+    background-color: orange;
+    height: 120px;
+    width: 120px; 
+}

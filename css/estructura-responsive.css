@@ -1,0 +1,95 @@
+* {
+    font-weight: 100;
+    /* font-size: 14px; */
+}
+/*  */
+/* ESTRUCTURA RESPONSIVE BASICA*/
+.content {
+    display: flex; /* COLOCAR EN LINEA */
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header, .main, .aside, .footer {
+    padding: 20px;
+}
+
+.header {
+    background: lightblue;
+    flex-basis: 60px;
+}
+.main {
+    background: slateblue;
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+.aside {
+    background: darkslateblue;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.footer {
+    background: violet;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+/* ================================================================== */
+/* RESOLUCION ESCRITORIO */
+
+/* SI LA PANTALLA TIENE MAS A 700PX */
+/*OPCION 1 (NO Recomendable)
+ @media screen and (min-width: 700px){
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .header {
+        flex-basis: 100%;
+        max-height: 60px;
+    }
+    .main, .aside {
+        height: 100%;
+    }
+    .main {
+        flex-grow: 4;
+    }
+    .aside {
+        flex-grow:1;
+    }
+    .footer {
+        flex-basis: 100%;
+    }
+    
+} */
+
+/* ================================================================== */
+/* OPCION 2 (Recomendable) */
+/* SI LA PANTALLA TIENE MAS A 900PX*/
+@media screen and (min-width: 900px){
+    .content {
+       display: grid;
+       /* grid-template-rows: repeat(6, minmax(300px 1fr)); */
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+    }
+    .header {
+       grid-column: 1 / span 3;
+    }
+    .main {
+        grid-column: 1 / span 2;
+        grid-row: 2 / 6;
+    }
+    .aside {
+        grid-row: 2 / 6;
+    }
+    .footer {
+        grid-column: 1 / span 3;
+        grid-row: 6 / 7;
+    }
+}
+
+/* ================================================================== */

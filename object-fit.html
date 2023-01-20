@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="esq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <link rel="stylesheet" type="text/css" href="css/object-fit.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+</head>
+
+<body>
+    <h1>OBJECT-FIT</h1>
+    <p>object-fit: contain;</p>
+    <div class="imagen-contain">
+        <img src="img/me.jpg" alt="me">
+    </div>
+    <p>object-fit: cover; (Se ajusta al contenedor)</p>
+    <div class="imagen-cover">
+        <img src="img/me.jpg" alt="me">
+    </div>
+
+    <p>object-fit: none;(pone las dimensiones originales)</p>
+    <div class="imagen-none">
+        <img src="img/me.jpg" alt="me">
+    </div>
+    <p>object-fit: scale-down;()</p>
+    <div class="imagen-scale-down">
+        <img src="img/me.jpg" alt="me">
+    </div>
+    <h1>OBJECT-POSITION</h1>
+    <p>object-position: left;</p>
+    <div class="imagen-position">
+        <img src="img/me1.png" alt="me" class="izquierda">
+    </div>
+    <p>object-position: right;</p>
+
+    <div class="imagen-position">
+        <img src="img/me1.png" alt="me" class="derecha">
+    </div>
+    <p>object-position: boton;</p>
+    <div class="imagen-position-baja">
+        <img src="img/me1.png" alt="me" class="abajo">
+    </div>
+    <p>object-position: top;</p>
+    <div class="imagen-position-baja">
+        <img src="img/me1.png" alt="me" class="arriba">
+    </div>
+
+    <p>object-fit: para multiples imagens</p>
+    <div class="imagen-multi">
+        <div>
+            <img src="img/me1.png" alt="me">
+        </div>
+        <div>
+            <img src="img/me1.png" alt="me">
+        </div>
+        <div>
+            <img src="img/me1.png" alt="me">
+        </div>
+        <div>
+            <img src="img/me1.png" alt="me">
+        </div>
+        <div>
+            <img src="img/me1.png" alt="me">
+        </div>
+        <div>
+            <img src="img/me1.png" alt="me">
+        </div>
+        <div>
+            <img src="img/me1.png" alt="me">
+        </div>
+    </div>
+<br>
+<br>
+    <h1>LO QUE SE VERA:</h1>
+    <ol start="1">
+        <li>OUTLINE</li>
+        <li>POSITION:
+            <ul>
+                <li>Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </li>
+        <li>Z-INDEX
+            <ul>
+                <li>Solo el elementos posicionados conflictos de hijos y padres</li>
+            </ul>
+        </li>
+        <li>DISPLAY:
+            <ul>
+                <li style="color:red ;">Block</li>
+                <li style="color:red ;">Inline</li>
+                <li style="color:red ;">Inline-Block</li>
+                <li>Table</li>
+                <li>Inline-Table</li>
+                <li>List-Item</li>
+                <li>Table-Cell</li>
+                <li>Table-Row</li>
+                <li>Table-Column</li>
+                <li>Grid</li>
+            </ul>
+        </li>
+        <del style="color:red ;">
+            <li>OVERFLOW: (X,Y) AUTO, HIDDEN, SCROLL</li>
+            <li >FLOAT: (Left, Right, None, Inherit)</li>
+            <li>PSEUDO-ELEMENTOS:
+                <ul>
+                    <li>::First-line    | BLOCK (inline-block)</li>
+                    <li>::First-letter  | BLOCK (inline-block)</li>
+                    <li>::placeholder</li>
+                    <li>::selection</li>
+                    <li>::after         | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                    <li>::before         | HIJOS - CONTENT (NECESARIO) - INLINE</li>
+                </ul>
+            </li>
+            <li>PSEUDO-CLASES:
+                <ul>
+                    <li>:hover</li>
+                    <li>:link</li>
+                    <li>:visited</li>
+                    <li>:actived</li>
+                    <li>:focus</li>
+                    <li>:lang</li>
+                </ul>
+            </li>
+      
+        <li>OBJECT-FIT: Fil
+            <ul>
+                <li>Contain</li>
+                <li>Cover</li>
+                <li>None</li>
+                <li>Scale-Down</li>
+            </ul>
+        </li>
+        <li>OBJECT-POSITION:
+            <ul>
+                <li>Left</li>
+                <li>Right</li>
+                <li>Top</li>
+                <li>Button</li>
+                <li>PX</li>
+                <li>EM</li>
+                <li>%</li>
+                <li>ETC</li>
+            </ul>
+        </li>
+        </del>
+    </ol>
+
+</body>
+
+</html>
